@@ -1,0 +1,68 @@
+.search-jobs {
+  margin: 20px;
+}
+
+.job-list {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Ensure each job card has equal width */
+.job-list .job-card {
+  width: calc(25% ); /* Adjust width with desired spacing */
+  margin-bottom: 30px; /* Adjust margin as needed */
+}
+
+/* Adjust width for smaller screens */
+@media (max-width: 768px) {
+  .job-list .job-card {
+    width: calc(50% - 20px); /* Adjust width for smaller screens to fit two items per row */
+  }
+}
+.loading,
+.error {
+  margin: 20px;
+}
+
+.filtered-job-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filtered-job-list .job-card {
+  width: calc(25% ); /* Adjust width with desired spacing */
+  margin-bottom: 30px; /* Adjust margin as needed */
+}
+
+@media (max-width: 768px) {
+  .filtered-job-list .job-card {
+    width: calc(50% - 20px); /* Adjust width for smaller screens to fit two items per row */
+  }
+}
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between; 
+  margin-bottom: 20px;/* Adjust the gap between input fields as needed */
+}
+
+.filter-input {
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0; /* Add this line to remove the margin */
+}
+
+.filter-input:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
